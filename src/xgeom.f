@@ -149,7 +149,7 @@ C----------------------------------------------------------
 C     Finds "nose" of airfoil where curvature is a maximum
 C----------------------------------------------------------
 C
-      PARAMETER (NMAX=500)
+      PARAMETER (NMAX=5000)
       DIMENSION A(NMAX), B(NMAX), C(NMAX), CV(NMAX)
 C
       IF(N.GT.NMAX) STOP 'NSFIND: Local array overflow. Increase NMAX.'

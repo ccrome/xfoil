@@ -62,7 +62,7 @@ C
 
       SUBROUTINE SPLIND(X,XS,S,N,XS1,XS2)
       DIMENSION X(N),XS(N),S(N)
-      PARAMETER (NMAX=1000)
+      PARAMETER (NMAX=10000)
       DIMENSION  A(NMAX),B(NMAX),C(NMAX)
 C-------------------------------------------------------
 C     Calculates spline coefficients for X(S).          |
