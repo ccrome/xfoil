@@ -3,7 +3,7 @@ RUN apk update
 RUN apk add cmake make gfortran git musl-dev libx11-dev xvfb py3-pip py3-numpy py3-setuptools
 
 RUN git clone https://github.com/ccrome/xfoil.git
-RUN cd /xfoil && mkdir build && git checkout docker
+RUN cd /xfoil && mkdir build
 RUN cd /xfoil/build && cmake  -Wno-dev ..
 RUN cd /xfoil/build && make -j && make install
 
